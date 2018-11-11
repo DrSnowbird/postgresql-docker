@@ -1,0 +1,67 @@
+db_1       | The files belonging to this database system will be owned by user "postgres".
+adminer_1  | PHP 7.2.6 Development Server started at Sun Jun  3 05:14:35 2018
+db_1       | This user must also own the server process.
+db_1       | 
+db_1       | The database cluster will be initialized with locale "en_US.utf8".
+db_1       | The default database encoding has accordingly been set to "UTF8".
+db_1       | The default text search configuration will be set to "english".
+db_1       | 
+db_1       | Data page checksums are disabled.
+db_1       | 
+db_1       | fixing permissions on existing directory /var/lib/postgresql/data ... ok
+db_1       | creating subdirectories ... ok
+db_1       | selecting default max_connections ... 100
+db_1       | selecting default shared_buffers ... 128MB
+db_1       | selecting dynamic shared memory implementation ... posix
+db_1       | creating configuration files ... ok
+db_1       | running bootstrap script ... ok
+db_1       | performing post-bootstrap initialization ... ok
+db_1       | syncing data to disk ... ok
+db_1       | 
+db_1       | Success. You can now start the database server using:
+db_1       | 
+db_1       |     pg_ctl -D /var/lib/postgresql/data -l logfile start
+db_1       | 
+db_1       | 
+db_1       | WARNING: enabling "trust" authentication for local connections
+db_1       | You can change this by editing pg_hba.conf or using the option -A, or
+db_1       | --auth-local and --auth-host, the next time you run initdb.
+db_1       | waiting for server to start....2018-06-03 05:14:36.667 UTC [42] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+db_1       | 2018-06-03 05:14:36.688 UTC [43] LOG:  database system was shut down at 2018-06-03 05:14:36 UTC
+db_1       | 2018-06-03 05:14:36.696 UTC [42] LOG:  database system is ready to accept connections
+db_1       |  done
+db_1       | server started
+db_1       | ALTER ROLE
+db_1       | 
+db_1       | 
+db_1       | /usr/local/bin/docker-entrypoint.sh: ignoring /docker-entrypoint-initdb.d/*
+db_1       | 
+db_1       | waiting for server to shut down...2018-06-03 05:14:36.810 UTC [42] LOG:  received fast shutdown request
+db_1       | .2018-06-03 05:14:36.812 UTC [42] LOG:  aborting any active transactions
+db_1       | 2018-06-03 05:14:36.815 UTC [42] LOG:  worker process: logical replication launcher (PID 49) exited with exit code 1
+db_1       | 2018-06-03 05:14:36.815 UTC [44] LOG:  shutting down
+db_1       | 2018-06-03 05:14:36.838 UTC [42] LOG:  database system is shut down
+db_1       |  done
+db_1       | server stopped
+db_1       | 
+db_1       | PostgreSQL init process complete; ready for start up.
+db_1       | 
+db_1       | 2018-06-03 05:14:36.927 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+db_1       | 2018-06-03 05:14:36.927 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+db_1       | 2018-06-03 05:14:36.931 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+db_1       | 2018-06-03 05:14:36.951 UTC [60] LOG:  database system was shut down at 2018-06-03 05:14:36 UTC
+db_1       | 2018-06-03 05:14:36.959 UTC [1] LOG:  database system is ready to accept connections
+adminer_1  | [Sun Jun  3 05:19:51 2018] ::ffff:172.23.0.1:54904 [200]: /
+adminer_1  | [Sun Jun  3 05:19:51 2018] ::ffff:172.23.0.1:54902 [200]: /?file=default.css&version=4.6.2
+adminer_1  | [Sun Jun  3 05:19:51 2018] ::ffff:172.23.0.1:54908 [200]: /?file=functions.js&version=4.6.2
+adminer_1  | [Sun Jun  3 05:19:53 2018] ::ffff:172.23.0.1:54924 [200]: /?script=version
+adminer_1  | [Sun Jun  3 05:19:53 2018] ::ffff:172.23.0.1:54928 [200]: /?file=favicon.ico&version=4.6.2
+adminer_1  | [Sun Jun  3 05:20:16 2018] ::ffff:172.23.0.1:54936 [302]: /
+adminer_1  | [Sun Jun  3 05:20:16 2018] ::ffff:172.23.0.1:54940 [403]: /?server=db&username=user1
+adminer_1  | [Sun Jun  3 05:20:44 2018] ::ffff:172.23.0.1:54956 [302]: /?server=db&username=user1
+db_1       | 2018-06-03 05:20:44.186 UTC [73] FATAL:  password authentication failed for user "user1"
+db_1       | 2018-06-03 05:20:44.186 UTC [73] DETAIL:  Role "user1" does not exist.
+db_1       | 	Connection matched pg_hba.conf line 95: "host all all all md5"
+adminer_1  | [Sun Jun  3 05:20:44 2018] ::ffff:172.23.0.1:54960 [403]: /?pgsql=db&username=user1
+
+
